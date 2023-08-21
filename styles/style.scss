@@ -380,3 +380,80 @@
  }
  
  //  ----------------------
+ //  ---------------------
+ footer {
+     position: relative;
+     margin-top: 160px;
+ }
+ 
+ footer::before {
+     content: "";
+     position: absolute;
+     margin: 0px 100px;
+     left: 0px;
+     right: 0px;
+     border-bottom: 1px solid #D8D8D8;
+     top: -80px;
+ }
+ 
+ .footer_container {
+     margin: 50px 100px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .footer_container a {
+     text-decoration: none;
+     //  color: #616161;
+ }
+ 
+ .footer_container ul {
+     font-size: 24px;
+     line-height: 29px;
+     font-weight: 700;
+     color: #000;
+ }
+ 
+ .footer_container li {
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 500;
+     color: #616161;
+     margin-top: 16px;
+ }
+ 
+ .footer_container ul a {
+     color: #000;
+ }
+ 
+ .footer_container li a {
+     color: #616161;
+ }
+ 
+ .footer_update input {
+     height: 45px;
+     width: 200px;
+     background-color: #F4F5F7;
+     border: none;
+ }
+ 
+ .footer_update input::placeholder {
+     font-size: 16px;
+     line-height: 24;
+     font-weight: 400;
+     color: #828282;
+     border: 1px soli black;
+ }
+ 
+ .footer_update form {
+     display: flex;
+     gap: 4px;
+     margin-top: 16px;
+ }
+ 
+ .form_btn {
+     height: 45px;
+     width: 45px;
+     border: none;
+     background-color: #E89F71;
+ }
