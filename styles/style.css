@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Medium.ttf");
 }
 body {
   font-family: "Gilroy";
+  background-color: #E5E5E5;
 }
 
 .background_header {
@@ -130,13 +132,6 @@ nav {
   background-color: #E89F71;
   transition: opacity 0.3s;
   opacity: 0.6;
-}
-
-.custom-swiper-button::before {
-  content: "";
-  font-family: "swiper-icons";
-  font-size: 24px;
-  line-height: 1;
 }
 
 .custom-swiper-pagination {
@@ -369,6 +364,234 @@ nav {
   line-height: 24px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.rooms_title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #3A3A3A;
+}
+
+.rooms_text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #616161;
+  padding: 8px 0px 24px;
+}
+
+.rooms_btn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #E89F71;
+  width: 176px;
+  height: 50px;
+  border: none;
+}
+
+.rooms_container {
+  display: flex;
+  width: 100%;
+  height: 670px;
+  background-color: #FCF8F3;
+  align-items: center;
+}
+
+.rooms_inform {
+  margin-left: 100px;
+}
+
+.rooms_slider {
+  position: relative;
+  width: 100%;
+}
+
+.swiper_rooms .swiper-slide {
+  flex-shrink: 1;
+}
+
+.swiper_rooms .swiper-slide:nth-child(1n),
+.swiper_rooms .swiper-slide:nth-child(2n),
+.swiper_rooms .swiper-slide:nth-child(3n) {
+  transform: translateX(50%);
+}
+
+.swiper-custom-button {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  z-index: 10;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.swiper-custom-button img {
+  width: 24px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #E89F71;
+}
+
+.tips_trick {
+  padding: 44px 75px;
+}
+
+.tips_text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tips_title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  padding: 16px 16px 8px;
+  text-align: left;
+}
+
+.tips_text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 0px 0px 16px 16px;
+}
+
+.swiper-list {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tips_text-block.active {
+  background-color: #ffffff;
+}
+
+.swiper-list .swiper-slide {
+  text-align: center;
+  background-color: #E5E5E5;
+}
+
+/* Кастомні кнопки перемикання */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #e89f71;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-prev {
+  left: 20px;
+}
+
+.custom-next {
+  right: 20px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #d18458;
+}
+
+/* Стилізація пагінації */
+.swiper-pagination {
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e89f71;
+}
+
+.furniture {
+  position: relative;
+  height: 800px;
+}
+
+.furniture_title {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.photo-item1 {
+  position: absolute;
+  top: 40px;
+  left: -57px;
+}
+
+.photo-item2 {
+  position: absolute;
+  bottom: 37px;
+  left: -67px;
+}
+
+.photo-item3 {
+  position: absolute;
+  top: 110px;
+  left: 224px;
+}
+
+.photo-item4 {
+  position: absolute;
+  bottom: 117px;
+  left: 331px;
+}
+
+.photo-item5 {
+  position: absolute;
+  top: 25%;
+  left: 691px;
+}
+
+.photo-item6 {
+  position: absolute;
+  top: 160px;
+  left: 1002px;
+}
+
+.photo-item7 {
+  position: absolute;
+  top: 75px;
+  left: 1308px;
+}
+
+.photo-item8 {
+  position: absolute;
+  bottom: 31px;
+  left: 1002px;
+}
+
+.photo-item9 {
+  position: absolute;
+  bottom: 77px;
+  left: 1196px;
 }
 
 footer {
